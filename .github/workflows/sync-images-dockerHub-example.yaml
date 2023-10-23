@@ -35,7 +35,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/controller:v0.24.2 docker://registry.cn-hangzhou.aliyuncs.com/yangxp/controller:v0.24.2
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/webhook:v0.24.2 docker://registry.cn-hangzhou.aliyuncs.com/yangxp/webhook:v0.24.2
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/interceptors:v0.24.2 docker://registry.cn-hangzhou.aliyuncs.com/yangxp/interceptors:v0.24.2
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/eventlistenersink:v0.24.2 docker://registry.cn-hangzhou.aliyuncs.com/yangxp/eventlistenersink:v0.24.2
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.39.0 docker://registry.cn-hangzhou.aliyuncs.com/yangxp/dashboard:v0.39.0
